@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 money_data = dict(dict())
 
-
 @app.route('/add/<string:date>/<int:money_amount>')
 def add_month_money(date, money_amount):
     try:
@@ -35,6 +34,11 @@ def get_year_month_money_amount(year, month):
         return f"There is no data for month: {month}"
     amount = money_data[year][month]
     return str(amount)
+
+@app.route('/clear-money-data')
+def clear_money_data():
+    money_data.clear()
+    return ''
 
 
 if __name__ == '__main__':
