@@ -12,6 +12,8 @@ def add_month_money(date, money_amount):
         date = datetime.strptime(date, "%Y%m%d")
     except:
         return "Incorrect date format"
+    if money_amount <= 0:
+        return "Incorrect money amount"
     money_data.setdefault(date.year, {}).setdefault(date.month, 0)
     money_data[date.year][date.month] += money_amount
     return "Success"
