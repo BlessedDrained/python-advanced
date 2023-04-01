@@ -7,15 +7,14 @@ def get_all_words(string):
         substr = ""
         for j in range(i, len(string)):
             substr += string[j]
-            substrings.append(substr)
+            if len(substr) > 4:
+                substrings.append(substr)
     return substrings
 
 
 def is_strong_password(password: str, words: set):
     password = password.lower()
     substrings = get_all_words(password)
-    if len(password) < 4:
-        return True
     for substring in substrings:
         if substring in words:
             return False
