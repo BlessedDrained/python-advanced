@@ -23,8 +23,6 @@ if __name__ == '__main__':
         answers = []
         for word in f.readlines():
             word = word[:-1]
-            if len(word) < len(code):
-                continue
             if is_convenient_word(word, code):
                 answers.append(word)
     print(answers)
