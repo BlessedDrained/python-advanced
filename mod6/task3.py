@@ -32,6 +32,7 @@ def input_and_check_password():
         return False
     if not is_strong_password(password, words):
         logger.info('Password contains english word(s). Try another one')
+        return False
     try:
         hasher = hashlib.md5()
         hasher.update(password.encode("latin-1"))
