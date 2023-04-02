@@ -1,0 +1,40 @@
+<--""
+   Level WARNING
+   |
+   o<--"Calc app"
+   |   Level INFO
+   |   Handler Stream <_io.TextIOWrapper name='<stdout>' mode='w' encoding='windows-1251'>
+   |     Level INFO
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
+   |   Handler <FileLevelLogHandler (INFO)>
+   |     Level INFO
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
+   |
+   o<--"Calc utils"
+       Level INFO
+       Handler Stream <_io.TextIOWrapper name='<stdout>' mode='w' encoding='windows-1251'>
+         Level INFO
+         Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
+       Handler <FileLevelLogHandler (INFO)>
+         Level INFO
+         Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
+<--""
+   Level WARNING
+   |
+   o<--"Calc app"
+   |   Level INFO
+   |   Handler Stream <_io.TextIOWrapper name='<stdout>' mode='w' encoding='windows-1251'>
+   |     Level INFO
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
+   |   Handler <FileLevelLogHandler (INFO)>
+   |     Level INFO
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
+   |
+   o<--"Calc utils"
+       Level INFO
+       Handler Stream <_io.TextIOWrapper name='<stdout>' mode='w' encoding='windows-1251'>
+         Level INFO
+         Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
+       Handler <FileLevelLogHandler (INFO)>
+         Level INFO
+         Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)d | %(message)s' datefmt=None
