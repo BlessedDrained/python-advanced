@@ -1,0 +1,4 @@
+actors <-> movie: многие-ко-многим, которая построена из двух связей один-ко-многим: movie_cast -> actors и movie_cast -> movie
+movie <-> director: многие-ко-многим, которая построена из двух связей один-ко-многим: movie_direction -> movie, movie_direction -> director
+oscar_awarded -> movie: один-ко-многим (у фильма может быть несколько оскаров)
+
